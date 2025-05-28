@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content-area {
+  margin-top: 15vh; /* Push content down below navbar */
+  height: 85vh; /* 85% of viewport height */
+  overflow-y: auto; /* Allow scrolling in content */
+}
