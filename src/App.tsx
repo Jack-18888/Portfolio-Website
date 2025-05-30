@@ -11,14 +11,35 @@ function App() {
         <Route 
         path="/"
         element={
-          <WrapperPage>
+          <WrapperPage page="/">
+            <HomePage />
+          </WrapperPage>
+        }/>
+        <Route 
+        path="/about"
+        element={
+          <WrapperPage page="/about">
+            <HomePage />
+          </WrapperPage>
+        }/>
+        <Route 
+        path="/works"
+        element={
+          <WrapperPage page="/works">
+            <HomePage />
+          </WrapperPage>
+        }/>
+        <Route 
+        path="/feedbacks"
+        element={
+          <WrapperPage page="/feedbacks">
             <HomePage />
           </WrapperPage>
         }/>
         <Route 
         path="/contact"
         element={
-          <WrapperPage>
+          <WrapperPage page="/contact">
             <ContactPage />
           </WrapperPage>
         }/>

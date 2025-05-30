@@ -2,13 +2,14 @@ import Navbar from "../Components/Navbar";
 import "../static/WrapperPage.css"
 
 interface props {
-  children: React.ReactNode
+  children: React.ReactNode;
+  page: string
 }
 
-const WrapperPage: React.FC<props> = ({ children }) => {
+const WrapperPage: React.FC<props> = ({ children, page }) => {
   return (
     <div className="container">
-      <Navbar />
+      <Navbar page={page} />
       <div className="content-area">
         {children}
       </div>
